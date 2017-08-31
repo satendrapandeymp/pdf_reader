@@ -36,7 +36,7 @@ data = reader_temp.extractText()
 func1()
 
 for num in range(page+1,infile.numPages):
-    reader_temp = infile.getPage(page)
+    reader_temp = infile.getPage(num)
     data = reader_temp.extractText()
     name = str(num) + ".mp3"
     p1 = Process(target=func1)
